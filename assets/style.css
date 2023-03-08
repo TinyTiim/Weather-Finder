@@ -1,0 +1,135 @@
+* {
+    
+    font-family: 'Tilt Warp', cursive;
+    
+}
+
+
+
+body {
+    background-color: rgb(94, 94, 94);
+  
+}
+
+
+header {
+    background-color: rgb(19, 82, 255);
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+aside {
+    margin-left: 20px;
+}
+
+#text-box {
+    border-radius: 10px  3px ;
+}
+
+#search-btn {
+    margin-top: 10px;
+   
+}
+
+
+#list-cities {
+    margin-top:  50px;
+    margin-left: 0px;
+}
+
+.city-index {
+    box-sizing: border-box;
+    margin-top: -600;
+    margin-right: 400px;
+    width: 800px;
+    float: right;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+   
+    
+}
+
+ .city-name {
+    
+    font-size: 35px;
+    text-align: left;
+    margin-right: 250px;
+    margin-bottom: 10;
+    clear: both;
+    margin-left: 5px;
+ }
+
+ .temp {
+    margin-left: 5px;
+ }
+ 
+ .wind {
+    margin-left: 5px;
+ }
+ 
+ .humidity {
+    margin-left: 5px;
+ }
+
+ .city-forecast {
+    float: right;
+    margin-top: -400;
+    margin-right: 170px;
+    text-align: left;
+ }
+
+ .day1 {
+    width: 180px;
+    height: 200px;
+    
+    margin-left: 30px;
+    background-color: rgb(19, 82, 255);
+    box-sizing: border-box;
+ }
+
+ .day2 {
+    width: 180px;
+    height: 200px;
+    margin-left: 30px;
+    background-color: rgb(19, 82, 255);
+    box-sizing: border-box;
+ }
+
+ .day3 {
+    width: 180px;
+    height: 200px;
+    margin-left: 30px;
+    background-color: rgb(19, 82, 255);
+    box-sizing: border-box;
+ }
+
+ .day4 {
+    width: 180px;
+    height: 200px;
+    margin-left: 30px;
+    background-color: rgb(19, 82, 255);
+    box-sizing: border-box;
+ }
+ .day5 {
+    width: 180px;
+    height: 200px;
+    margin-left: 30px;
+    background-color: rgb(19, 82, 255);
+    box-sizing: border-box;
+ }
+
+
+
+  @media screen and (max-width: 992px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
