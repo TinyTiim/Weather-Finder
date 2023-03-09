@@ -40,36 +40,31 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q="+inputValue.value+"&ap
     wind.innerHTML="Wind: "+windValue;
     humidity.innerHTML="Humidity: "+humidityValue;
     timezone = dayjs_plugin_timezoneValue;
-    date.innerHTML = dayjs().format('M/D/YYYY');;
-
-
-  
-
-  
+    date.innerHTML = dayjs().format('M/D/YYYY'); 
 })
-
 
 })
 
 
-    button.addEventListener("click",function(){
-        fetch("api.openweathermap.org/data/2.5/forecast?q="+inputValue.value+"&appid="+apiKey+"&units=imperial")
-        .then(response => response.json())
-        .then(data => {
-        
-           
-            var tempValue = data['main']['temp'];
-            var windValue = data['wind']['speed'];
-            var humidityValue = data['main']['humidity'];
-            var dayjs_plugin_timezoneValue= data['sys']['timezone'];
+    const searchBtn = document.getElementById('search-btn');
+
+searchBtn.addEventListener('click', function() {
+  const city = document.getElementById('text-box').value;
+
+  localStorage.setItem('city', city);
+});
 
 
-            
-       
-        temp1.innerHTML ="Temp: " + tempValue + "°F";
-        wind1.innerHTML="Wind: "+windValue;
-        hum1.innerHTML="Humidity: "+humidityValue;
-        timezone = dayjs_plugin_timezoneValue;
-        date1.innerHTML = dayjs().format('M/D/YYYY');;
-        })
-    })
+window.onload = function() {
+    const listCities = document.getElementById('list-cities');
+    
+    const city = localStorage.getItem('city');
+    
+    if (city) {
+      const cityBtn = document.createElement('button');
+      cityBtn.classList.add('btn', 'btn-secondary', 'col-sm', 'mb-3');
+      cityBtn.innerText = city;
+      listCities.appendChild(cityBtn);
+    }
+  };
+  
