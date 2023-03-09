@@ -19,48 +19,50 @@
 
     </header>
 
-<div id = "container " class="wrapper">
+<div id = "container ">
 
     <aside>
         <h2>Search for city!</h2>
         <div class="input-group-prepend ">
-            <input type ="text" id="text-box" class="city w-25" placeholder="California">
+            <input type ="text" id="text-box" class="city w-25" placeholder="Tucson">
             
         </div>
-        <button type="button" id="search-btn" class="btn btn-primary btn-lg w-25 p-1 ">Search</button>
+        <button type="button" class=" btn btn-primary btn-lg w-25 p-1 " id = "search-btn">Search</button>
        
             
    
     
-        <div id="list-cities" class="row w-25 ">
+        <div id="list-cities" class="row w-25">
+           
+           
        
-            
         <button type="button" class="btn btn-secondary .col-sm  mb-3 ">city</button>
         <button type="button" class="btn btn-secondary .col-sm  mb-3 ">city</button>
-        <button type="button" class="btn btn-secondary .col-sm  mb-3">cityy</button>
+        <button type="button" class="btn btn-secondary .col-sm  mb-3">city</button>
         <button type="button" class="btn btn-secondary .col-sm  mb-3">city</button>
         <button type="button" class="btn btn-secondary .col-sm  mb-3">city</button>
         <button type="button" class="btn btn-secondary .col-sm  mb-3">city</button>
         <button type="button" class="btn btn-secondary .col-sm  mb-3">city</button>
         <button type="button" class="btn btn-secondary .col-sm  mb-3">city</button>
     
-        
+           
     </aside>
 
- <div class = "dashboard  ">
-
+ <div class = "dashboard col-lg-30">
+   <div class="col-md-20 " style="margin-left: 100px;">
+    <div class="col-sm-3 " style="margin-left: 1270px;">
     <div class="city-index ">
 
-        <div class="city-name  "><h3>city | date</h3></div>
+        <div id="city-name" ><h3>city</h3></div><div id="city-date" ><h3>date</h3></div>
 
-        <div class="temp mb-3 ">temp:</div>
+        <div class="temp mb-3 " id="temp">temp:</div>
 
-        <div class="wind mb-3">wind:</div>
+        <div class="wind mb-3" id="wind">wind:</div>
 
-        <div class="humidity mb-3">humidity:</div>
+        <div class="humidity mb-3"id="humidity">humidity:</div>
         
-
-
+    </div>
+    </div>
     </div>
 
     <div class="city-forecast">
@@ -73,7 +75,7 @@
 
                 <div class="humidity mb-3">humidity:</div>
             </div>
-            <div class="day2 col-1"><h5>day2</h5>
+            <div class="day2 col-1" ><h5>day2</h5>
                 <div class="temp mb-3 mt-5 ">temp:</div>
 
                 <div class="wind mb-3">wind:</div>
@@ -110,8 +112,21 @@
 
 </div>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+crossorigin="anonymous"
+></script>
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
+crossorigin="anonymous"
+></script>
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
+integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" 
+crossorigin="anonymous"
+></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>

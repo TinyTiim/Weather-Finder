@@ -78,6 +78,7 @@ aside {
     margin-top: -400;
     margin-right: 170px;
     text-align: left;
+    display: none;
  }
 
  .day1 {
@@ -123,13 +124,38 @@ aside {
 
 
   @media screen and (max-width: 992px) {
-    .column {
+    body {
       width: 100%;
     }
+   
+    .city-forecast {
+      
+      margin-right: -1px;
+      width: 60%;
+      height: 60%;
+    }
+    
   }
   
   @media screen and (max-width: 600px) {
-    .column {
+    body {
       width: 100%;
+
+   
     }
+
+    .city-forecast {
+      
+      margin-right: -10px;
+      
+      width: 60%;
+      height: 60%;
+    }
+
+    
+    aside h2 {
+      font-size: 20px;
+     
+    
   }
+}
